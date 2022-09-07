@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="icon" href="">
+</head>
+<body>
+  <!-- Header and Navigation -->
+    <header> <img src="Dead estates.png" alt="Dead Estates" width="30%" height="30%"></header>
+    <nav>
+        <ul class="uls">
+            <li><a href="index.html"  class="navanchor">Home</a></li>
+            <li><a href="build.html"  class="navanchor">Build</a></li>
+                <li><a href="Rent.html"  class="navanchor">Rent</a></li>
+                <li><a href="Buy.html"  class="navanchor">Buy</a></li>
+                <li><a href="about.html"  class="navanchor">About</a></li>
+                
+        </ul>
+    </nav>
+     <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="Eggener-Haunted-01-1020x617.jpg" style="width:100%" class="Slideshowimage">
+      <div class="text">Eggner Hanuted House</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="Monte Christo.webp" style="width:100%" class="Slideshowimage">
+      <div class="text">Monte Christo</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="S.K Pierce Mansion.jpg" style="width:100%" class="Slideshowimage">
+      <div class="text">S.K Pierce Mansion</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  
+  <script>
+      let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+  </script>
+   <div class="flexcontainer">
+        <div class="exocisminfo">
+                <img src="coronavirus-pope-francis-a90c513f4c7d62576d5d339130f4eece115264d1-s1600-c85.webp" alt="Priest" width=" 75%" class="Priestimage"> </a>
+             <h3>Contact your local priest today </h3>
+             <h5>We are not resposible for any demons summoned</h4>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus veritatis error quo cupiditate impedit optio nulla incidunt dignissimos totam molestiae quisquam consequatur eveniet pariatur quia id, laborum atque soluta itaque! Voluptatum, delectus minus dolor odio fuga commodi quam veniam ducimus. Labore vitae nisi libero unde iusto necessitatibus minus voluptatum accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rem, qui corporis officia nobis ut eius voluptate nisi alias aperiam sint animi, ab amet quasi consequuntur molestiae , illo nemo? Lorem ipsum dolor sit amet consectetur adipisicing elit. At ratione assumenda consectetur, voluptatum totam fuga iste labore deleniti magnam eaque facere a dignissimos expedita ipsam iusto autem blanditiis voluptate sed provident similique voluptas. Excepturi voluptate, veritatis odio vitae quisquam voluptas, doloribus suscipit mollitia perferendis totam rem, id unde iusto cum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates hic dolores iure accusamus doloremque nihil a magnam suscipit quis temporibus!
+
+        </div> 
+        <div class="Containerforbutts">
+            <div class="Container3">  
+               
+                   
+                    <button type="button" class="button">Excorcism</button>
+                    <button type="button"class="button">Ghosts</button>
+                    <button type="button"class="button">Cleanup</button>
+                   
+                   <div class="flexforexo">
+                        <div class="Exorcisminfo">
+                           <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="Exorcisminfo">
+                            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="Exorcisminfo">
+                            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                   </div>
+            </div>
+            <div class="Container4"> 
+                <div class="Image1">
+                    <a href="build.html"><img src="Hoia-Baciu-Forest-haunted-GRNWYM.webp" alt="Scary Forest" class="Forestbuilding"></a>
+                </div>
+                <a href="Rent.html"><div class="Image2"> <img src="Whaley house.webp" alt="Whaley house" class="Whaleyhouse"> <div class="Image"></div></a></div>
+               <a href="Buy.html"> <div class="Image3"> <img src="Careton house.JPG" alt="Careton house" class="Careton"></div></a>
+            </div>
+        </div>
+   </div>
+</body>
+
+</html>
+
